@@ -57,7 +57,6 @@ const WORKS = [
     cover: "images/gallery/octopus-full.jpg",
     images: [
       "images/gallery/octopus-full.jpg",
-      "images/gallery/octopus-cover.jpg",
       "images/gallery/octopus-detail.jpg",
     ],
     alt: "Чёрная футболка с росписью щупалец осьминога",
