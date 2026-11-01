@@ -72,7 +72,7 @@
         <div class="hero__bottom">
           <p class="hero__lead" >Создаю одежду из ваших фантазий. Каждая вещь расписана мной с огромным трепетом и любовью. Здесь нет случайных деталей и идентичных работ, только уникальность и стиль</p>
           <div class="hero__actions">
-            <a class="btn btn--wine" href="#painting">Смотреть роспись</a>
+            <a class="btn btn--wine" href="#painting">Смотреть работы</a>
             <a class="btn btn--ghost" href="#order">Заказать вещь</a>
           </div>
         </div>
@@ -174,11 +174,19 @@
     </footer>
 
     <dialog class="lightbox" id="lightbox">
-      <div class="lightbox__bar">
-        <p class="lightbox__caption"></p>
-        <button class="lightbox__close" type="button" data-close>Закрыть</button>
+      <button class="lightbox__close" type="button" data-close aria-label="Закрыть">Закрыть</button>
+      <div class="lightbox__stage">
+        <button class="lightbox__nav lightbox__prev" type="button" aria-label="Предыдущее фото" hidden>‹</button>
+        <img alt="">
+        <button class="lightbox__nav lightbox__next" type="button" aria-label="Следующее фото" hidden>›</button>
       </div>
-      <img alt="">
+      <div class="lightbox__meta">
+        <div class="lightbox__meta-top">
+          <p class="lightbox__caption"></p>
+          <p class="lightbox__price"></p>
+        </div>
+        <p class="lightbox__note"></p>
+      </div>
     </dialog>
 
     <script src="js/works.js"></script>
